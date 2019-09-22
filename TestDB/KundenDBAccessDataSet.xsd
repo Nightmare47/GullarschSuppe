@@ -134,7 +134,7 @@
         <xs:element name="KundenDB" msprop:Generator_TableClassName="KundenDBDataTable" msprop:Generator_TableVarName="tableKundenDB" msprop:Generator_TablePropName="KundenDB" msprop:Generator_RowDeletingName="KundenDBRowDeleting" msprop:Generator_RowChangingName="KundenDBRowChanging" msprop:Generator_RowEvHandlerName="KundenDBRowChangeEventHandler" msprop:Generator_RowDeletedName="KundenDBRowDeleted" msprop:Generator_UserTableName="KundenDB" msprop:Generator_RowChangedName="KundenDBRowChanged" msprop:Generator_RowEvArgName="KundenDBRowChangeEvent" msprop:Generator_RowClassName="KundenDBRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="ID" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:long" />
               <xs:element name="Vorname" msprop:Generator_ColumnVarNameInTable="columnVorname" msprop:Generator_ColumnPropNameInRow="Vorname" msprop:Generator_ColumnPropNameInTable="VornameColumn" msprop:Generator_UserColumnName="Vorname" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -150,8 +150,8 @@
                 </xs:simpleType>
               </xs:element>
               <xs:element name="Geburtsdatum" msprop:Generator_ColumnVarNameInTable="columnGeburtsdatum" msprop:Generator_ColumnPropNameInRow="Geburtsdatum" msprop:Generator_ColumnPropNameInTable="GeburtsdatumColumn" msprop:Generator_UserColumnName="Geburtsdatum" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="Telefonnummer" msprop:Generator_ColumnVarNameInTable="columnTelefonnummer" msprop:Generator_ColumnPropNameInRow="Telefonnummer" msprop:Generator_ColumnPropNameInTable="TelefonnummerColumn" msprop:Generator_UserColumnName="Telefonnummer" type="xs:int" minOccurs="0" />
-              <xs:element name="Faxnummer" msprop:Generator_ColumnVarNameInTable="columnFaxnummer" msprop:Generator_ColumnPropNameInRow="Faxnummer" msprop:Generator_ColumnPropNameInTable="FaxnummerColumn" msprop:Generator_UserColumnName="Faxnummer" type="xs:int" minOccurs="0" />
+              <xs:element name="Telefonnummer" msprop:Generator_ColumnVarNameInTable="columnTelefonnummer" msprop:Generator_ColumnPropNameInRow="Telefonnummer" msprop:Generator_ColumnPropNameInTable="TelefonnummerColumn" msprop:Generator_UserColumnName="Telefonnummer" type="xs:long" minOccurs="0" />
+              <xs:element name="Faxnummer" msprop:Generator_ColumnVarNameInTable="columnFaxnummer" msprop:Generator_ColumnPropNameInRow="Faxnummer" msprop:Generator_ColumnPropNameInTable="FaxnummerColumn" msprop:Generator_UserColumnName="Faxnummer" type="xs:long" minOccurs="0" />
               <xs:element name="E-Mailadresse" msprop:Generator_ColumnVarNameInTable="_columnE_Mailadresse" msprop:Generator_ColumnPropNameInRow="_E_Mailadresse" msprop:Generator_ColumnPropNameInTable="_E_MailadresseColumn" msprop:Generator_UserColumnName="E-Mailadresse" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -159,7 +159,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="PLZ" msprop:Generator_ColumnVarNameInTable="columnPLZ" msprop:Generator_ColumnPropNameInRow="PLZ" msprop:Generator_ColumnPropNameInTable="PLZColumn" msprop:Generator_UserColumnName="PLZ" type="xs:int" minOccurs="0" />
+              <xs:element name="PLZ" msprop:Generator_ColumnVarNameInTable="columnPLZ" msprop:Generator_ColumnPropNameInRow="PLZ" msprop:Generator_ColumnPropNameInTable="PLZColumn" msprop:Generator_UserColumnName="PLZ" type="xs:long" minOccurs="0" />
               <xs:element name="Straße" msprop:Generator_ColumnVarNameInTable="columnStraße" msprop:Generator_ColumnPropNameInRow="Straße" msprop:Generator_ColumnPropNameInTable="StraßeColumn" msprop:Generator_UserColumnName="Straße" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">

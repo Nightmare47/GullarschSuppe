@@ -469,7 +469,7 @@ namespace TestDB {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public KundenDBRow AddKundenDBRow(string Vorname, string Nachname, System.DateTime Geburtsdatum, int Telefonnummer, int Faxnummer, string _E_Mailadresse, int PLZ, string Straße, string Ort, string Land, string Sprache) {
+            public KundenDBRow AddKundenDBRow(string Vorname, string Nachname, System.DateTime Geburtsdatum, long Telefonnummer, long Faxnummer, string _E_Mailadresse, long PLZ, string Straße, string Ort, string Land, string Sprache) {
                 KundenDBRow rowKundenDBRow = ((KundenDBRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -491,7 +491,7 @@ namespace TestDB {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public KundenDBRow FindByID(int ID) {
+            public KundenDBRow FindByID(long ID) {
                 return ((KundenDBRow)(this.Rows.Find(new object[] {
                             ID})));
             }
@@ -530,7 +530,7 @@ namespace TestDB {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnID = new global::System.Data.DataColumn("ID", typeof(long), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID);
                 this.columnVorname = new global::System.Data.DataColumn("Vorname", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnVorname);
@@ -538,15 +538,15 @@ namespace TestDB {
                 base.Columns.Add(this.columnNachname);
                 this.columnGeburtsdatum = new global::System.Data.DataColumn("Geburtsdatum", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGeburtsdatum);
-                this.columnTelefonnummer = new global::System.Data.DataColumn("Telefonnummer", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnTelefonnummer = new global::System.Data.DataColumn("Telefonnummer", typeof(long), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTelefonnummer);
-                this.columnFaxnummer = new global::System.Data.DataColumn("Faxnummer", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnFaxnummer = new global::System.Data.DataColumn("Faxnummer", typeof(long), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFaxnummer);
                 this._columnE_Mailadresse = new global::System.Data.DataColumn("E-Mailadresse", typeof(string), null, global::System.Data.MappingType.Element);
                 this._columnE_Mailadresse.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnE_Mailadresse");
                 this._columnE_Mailadresse.ExtendedProperties.Add("Generator_UserColumnName", "E-Mailadresse");
                 base.Columns.Add(this._columnE_Mailadresse);
-                this.columnPLZ = new global::System.Data.DataColumn("PLZ", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnPLZ = new global::System.Data.DataColumn("PLZ", typeof(long), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPLZ);
                 this.columnStraße = new global::System.Data.DataColumn("Straße", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnStraße);
@@ -559,8 +559,6 @@ namespace TestDB {
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AutoIncrement = true;
-                this.columnID.AutoIncrementSeed = -1;
-                this.columnID.AutoIncrementStep = -1;
                 this.columnID.AllowDBNull = false;
                 this.columnID.Unique = true;
                 this.columnVorname.MaxLength = 255;
@@ -712,9 +710,9 @@ namespace TestDB {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int ID {
+            public long ID {
                 get {
-                    return ((int)(this[this.tableKundenDB.IDColumn]));
+                    return ((long)(this[this.tableKundenDB.IDColumn]));
                 }
                 set {
                     this[this.tableKundenDB.IDColumn] = value;
@@ -771,10 +769,10 @@ namespace TestDB {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Telefonnummer {
+            public long Telefonnummer {
                 get {
                     try {
-                        return ((int)(this[this.tableKundenDB.TelefonnummerColumn]));
+                        return ((long)(this[this.tableKundenDB.TelefonnummerColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("Der Wert für Spalte Telefonnummer in Tabelle KundenDB ist DBNull.", e);
@@ -787,10 +785,10 @@ namespace TestDB {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Faxnummer {
+            public long Faxnummer {
                 get {
                     try {
-                        return ((int)(this[this.tableKundenDB.FaxnummerColumn]));
+                        return ((long)(this[this.tableKundenDB.FaxnummerColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("Der Wert für Spalte Faxnummer in Tabelle KundenDB ist DBNull.", e);
@@ -819,10 +817,10 @@ namespace TestDB {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int PLZ {
+            public long PLZ {
                 get {
                     try {
-                        return ((int)(this[this.tableKundenDB.PLZColumn]));
+                        return ((long)(this[this.tableKundenDB.PLZColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("Der Wert für Spalte PLZ in Tabelle KundenDB ist DBNull.", e);
